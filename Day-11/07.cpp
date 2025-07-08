@@ -10,7 +10,10 @@ int main(){
 
     for(int i = 1 ; i <= rows ; i++){
         for(int j = 1 ; j <= cols ; j++){
-            if(i == 1 || i == rows || j == 1 || j == cols){
+            if(i == j || i + j == cols + 1){
+                cout << "0" << " ";
+            }
+            else if(i == 1 || i == rows || j == 1 || j == cols){
                 cout << "1" << " ";
             }
             else{
